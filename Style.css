@@ -1,0 +1,313 @@
+@font-face {
+  font-family: "rationaltwdisplaydemo-light";
+  src: url(Fonts/rationaltwdisplaydemo-light.otf);
+}
+
+@font-face {
+  font-family: "rationaltwdisplaydemo-semibold";
+  src: url(Fonts/rationaltwdisplaydemo-semibold.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "rationaltwdisplaydemo-semibold", sans-serif;
+}
+
+body {
+  font-family: "rationaltwdisplaydemo-semibold", sans-serif;
+}
+
+/* Navbar Section */
+
+.main-container {
+  display: flex;
+  background-color: #ee9b00;
+}
+
+#nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  margin-left: 40px;
+}
+
+.logo img {
+  height: 60px;
+  width: 60px;
+}
+
+.logo h3 {
+  font-family: "Outfit", sans-serif;
+  font-size: 1.8rem;
+}
+
+.menu-options {
+  margin-left: 200px;
+}
+
+.menu-options ul {
+  display: flex;
+  list-style-type: none;
+  gap: 20px;
+}
+
+.menu-options li {
+  margin: 0;
+}
+
+.menu-options a {
+  text-decoration: none;
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.menu-options a:hover {
+  background-color: #0fff50;
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+  margin-right: 70px;
+}
+
+.button-container button {
+  display: inline-block;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  font-size: 14px;
+  font-family: "rationaltwdisplaydemo-semibold", sans-serif;
+  cursor: pointer;
+  padding: 10px;
+  height: 45px;
+  width: 145px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.top-section .text-container .button1,
+.top-section .text-container .btn2 {
+  font-size: 14px; /* Adjust the font size to your preference */
+}
+
+
+.button-container button:hover {
+  background-color: white;
+  color: black;
+}
+
+.logo {
+  display: flex;
+  margin-left: 10px;
+}
+
+.checkbtn {
+  display: none;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+/* Header Section */
+
+.header{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 500px;
+  width: 100%;
+  background-color: #ee9b00;
+}
+
+.container-fullwidth{
+  padding: 3% 15%;
+}
+.container-fluid{
+  padding: 0 ;
+}
+
+h1{
+  margin-left: 95px;
+  padding-top: 75px;
+  display: inline-block;
+}
+
+p{
+  margin-left: 95px;
+  /* display: inline-block; */
+  height: 100px;
+  width: 500px;
+  font-family: 'rationaltwdisplaydemo-light',sans-serif;
+  font-weight: 300;
+}
+/* .p-tag p{
+  
+} */
+.button1{
+  background-color: transparent;
+  margin-left: 95px;
+  border: 1px solid white;
+  color: black;
+  font-family: "rationaltwdisplaydemo-semibold", sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 10px;
+  height: 45px;
+  width: 145px;
+  transition: background-color 0.3s, color 0.3s;
+}
+.button1:hover {
+  background-color: white;
+  color: black;
+}
+.btn2{
+  margin-left: 15px;
+  background-color: transparent;
+  border: 1px solid white;
+  color: black;
+  font-family: "rationaltwdisplaydemo-semibold", sans-serif;
+  cursor: pointer;
+  padding: 10px;
+  height: 45px;
+  width: 145px;
+  transition: background-color 0.3s, color 0.3s;
+}
+.btn2:hover {
+  background-color: white;
+  color: black;
+}
+.img-container{
+  display: inline-block;
+  height: 100%;
+  width: 48%;
+  margin-left: 20px;
+}
+img{
+  height: 500px;
+  width:  500px;
+  margin-left: 65px;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  /* Add the following CSS to display the hamburger icon in mobile view */
+  .checkbtn {
+    display: flex;
+  }
+  
+  /* Adjust the logo size for mobile view */
+  .logo img {
+    height: 30px;
+    width: 30px;
+  }
+
+  /* Adjust the menu options styling for mobile view */
+  .menu-options {
+    position: fixed;
+    top: 80px;
+    left: -50%;
+    width: 110%;
+    height: 100vh;
+    background: black;
+    text-align: center;
+    transition: all 0.5s;
+  }
+
+  .menu-options ul {
+    display: block;
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  .menu-options li {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-bottom: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu-options a {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  /* Show the menu options when the hamburger icon is checked */
+  /* #menu-toggle:checked ~ .menu-options {
+    left: 0;
+  } */
+
+  .button-container {
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+    margin-left: 10px;
+  }
+
+  .button-container button {
+    display: inline-block;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    font-family: "rationaltwdisplaydemo-semibold", sans-serif;
+    font-size: 12.5px;
+    cursor: pointer;
+    padding: 8px;
+    height: 35px;
+    width: 125px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  .logo p {
+    font-family: "Outfit", sans-serif;
+    font-size: 1.3rem;
+  }
+
+  /* Adjust the hover and active styles for mobile view */
+  .menu-options a:hover,
+  .menu-options a.active {
+    background: none;
+    color: #0fff50;
+    
+  }
+
+  .header{
+    width: 100%;
+    height: auto;
+  }
+
+  h1{
+    margin-left: 10px;
+    padding-top: 10px;
+    display: inline-block;
+    font-size: 10px;
+  }
+  
+  p{
+  width: 100%;
+  margin-left: 15px;
+  }
+  img{
+    height: 300px;
+    width: 300px;
+    margin-left: 1px;
+  }
+}

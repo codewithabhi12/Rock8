@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Outfit&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="Style.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <title>RocketCode</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <nav id="nav-bar">
+        <input type="checkbox" id="menu-toggle" />
+
+        <label for="menu-toggle" class="checkbtn">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="white"
+            width="24"
+            height="24"
+          >
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-9v2h18V4H3z" />
+          </svg>
+        </label>
+        <div class="logo">
+          <img src="pngegg.png" alt="image" />
+          <h3>Rocket Code</h3>
+        </div>
+
+        <div class="menu-options">
+          <ul class="menu-options">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+          </ul>
+        </div>
+        <div class="button-container">
+          <a href="#contact"
+            ><button class="button fs-14">Try For Free</button></a
+          >
+        </div>
+      </nav>
+    </div>
+    <div class="container-fluid header">
+      <div class="row">
+        <div class="col-lg-6 col-md-12 col-sm-12">
+          <h1>Learn to Code In 1 Month</h1>
+          <p>
+            Nothing is impossible, they say. So is learning programming in just
+            a couple of months. All we need is your commitment only.
+          </p>
+
+          <button class="button1">Try For Free</button>
+          <button class="btn2">Sign Up Now</button>
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12">
+          <img src="code.png" alt="codeman" class="img-fluid" />
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Toggle the menu options when the hamburger icon is clicked
+      document
+        .getElementById("menu-toggle")
+        .addEventListener("change", function () {
+          var menuOptions = document.querySelector(".menu-options");
+          menuOptions.style.display = this.checked ? "block" : "none";
+        });
+    </script>
+  </body>
+</html>
